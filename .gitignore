@@ -1,0 +1,13 @@
+# Fichiers générés par Rust et Cargo
+# Ce dossier peut devenir très volumineux et ne doit jamais être partagé.
+/target/
+
+# Fichiers de configuration spécifiques à l'éditeur de code
+.vscode/
+.idea/
+
+# Fichiers système
+.DS_Store
+
+# Fichiers d'environnement qui peuvent contenir des clés d'API ou d'autres secrets
+.env
