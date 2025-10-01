@@ -1,4 +1,6 @@
+mod models; // On importe le module models (même si on ne l'utilise pas encore).
 use actix_web::{get, App, HttpServer, Responder};
+
 
 // C'est une fonction qui répondra quand on visite la page d'accueil.
 // L'étiquette #[get("/")] dit : "Hé, si quelqu'un arrive sur l'adresse de base, c'est toi qui travailles !"
