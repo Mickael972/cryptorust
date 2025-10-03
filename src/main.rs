@@ -1,4 +1,6 @@
 mod models; // On importe le module models (même si on ne l'utilise pas encore).
+mod handler;
+mod service;
 use actix_web::{get, App, HttpServer, Responder};
 
 
@@ -17,7 +19,7 @@ async fn main() -> std::io::Result<()> {
     // On crée un nouveau serveur HTTP.
     HttpServer::new(|| {
         // On enregistre notre fonction "index" pour qu'elle réponde à la racine "/".
-        App::new().service(index)
+        App::new().service(handler::handler::get_crypto)
     })
     .bind(("127.0.0.1", 8080))? // On dit au serveur d'écouter sur le port 8080.
     .run()
